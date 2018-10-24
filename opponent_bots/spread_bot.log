@@ -8,11 +8,16 @@ DEBUG:root:Order:2 19 7.0
 DEBUG:root:Finish turn
 
 DEBUG:root:Order:2 20 7.0
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:2 8 24.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Order:2 7 26.0
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:2 8 26.0
 DEBUG:root:Finish turn
 
@@ -43,17 +48,25 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+=======
+DEBUG:root:Order:2 15 31.0
+DEBUG:root:Finish turn
+
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:19 12 36.0
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+=======
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -67,7 +80,10 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:15 8 51.0
+=======
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -82,13 +98,20 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:19 18 61.0
 DEBUG:root:Finish turn
 
+=======
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:11 12 5.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -103,6 +126,25 @@ DEBUG:root:Finish turn
 DEBUG:root:Finish turn
 
 DEBUG:root:Order:7 17 38.0
+=======
+DEBUG:root:Order:2 18 61.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:15 11 16.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:17 8 19.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:15 7 10.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:19 13 67.0
+DEBUG:root:Finish turn
+
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -111,22 +153,38 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:16 14 67.0
 DEBUG:root:Finish turn
 
+=======
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:15 12 13.0
+DEBUG:root:Order:17 22 36.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:15 5 71.0
 DEBUG:root:Finish turn
 
 DEBUG:root:Order:19 6 71.0
+=======
+DEBUG:root:Order:2 14 67.0
+DEBUG:root:Finish turn
+
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:2 9 71.0
+=======
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -137,6 +195,27 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:2 11 12.0
+DEBUG:root:Order:17 15 37.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
+DEBUG:root:Finish turn
+
+DEBUG:root:Finish turn
+
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:19 5 71.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
+DEBUG:root:Finish turn
+
+DEBUG:root:Finish turn
+
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:18 6 71.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -147,14 +226,7 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
+<<<<<<< HEAD
 DEBUG:root:Order:2 10 71.0
 DEBUG:root:Finish turn
 
@@ -165,17 +237,33 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Order:19 21 74.0
 DEBUG:root:Order:16 5 58.0
+=======
+DEBUG:root:Order:2 9 71.0
+DEBUG:root:Order:18 22 12.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:18 8 10.0
+DEBUG:root:Order:7 12 14.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Finish turn
 
 DEBUG:root:Order:15 22 74.0
+=======
+DEBUG:root:Order:2 7 19.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:17 10 71.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -186,31 +274,54 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Finish turn
 
 DEBUG:root:Order:9 14 34.0
+=======
+DEBUG:root:Order:2 13 24.0
+DEBUG:root:Order:15 22 44.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:19 21 74.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:2 3 86.0
 DEBUG:root:Order:13 10 64.0
 DEBUG:root:Finish turn
 
+=======
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:5 11 12.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:2 14 40.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:17 5 40.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:19 4 86.0
 DEBUG:root:Finish turn
 
@@ -218,30 +329,57 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+=======
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:6 8 23.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:21 12 14.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:17 15 37.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:2 6 41.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:16 22 70.0
+=======
+DEBUG:root:Order:21 7 9.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:6 10 59.0
+=======
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:19 3 86.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Finish turn
 
 DEBUG:root:Order:2 22 108.0
@@ -250,6 +388,26 @@ DEBUG:root:Finish turn
 DEBUG:root:Finish turn
 
 DEBUG:root:Order:15 17 96.0
+=======
+DEBUG:root:Order:13 10 22.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:19 11 13.0
+DEBUG:root:Order:2 22 44.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:9 21 55.0
+DEBUG:root:Finish turn
+
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
+DEBUG:root:Finish turn
+
+DEBUG:root:Finish turn
+
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:6 12 12.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -258,37 +416,88 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
+<<<<<<< HEAD
 DEBUG:root:Order:13 4 47.0
+=======
+DEBUG:root:Order:14 5 10.0
+DEBUG:root:Order:3 7 15.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
+DEBUG:root:Finish turn
+
+DEBUG:root:Finish turn
+
+<<<<<<< HEAD
+DEBUG:root:Finish turn
+
+=======
+DEBUG:root:Order:3 8 20.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:19 15 17.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
+DEBUG:root:Finish turn
+
+DEBUG:root:Finish turn
+
+<<<<<<< HEAD
+DEBUG:root:Finish turn
+
+DEBUG:root:Finish turn
+
+=======
+DEBUG:root:Order:2 4 74.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:9 14 22.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:10 6 32.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
+<<<<<<< HEAD
 DEBUG:root:Order:14 0 70.0
 DEBUG:root:Finish turn
 
 DEBUG:root:Order:16 4 82.0
 DEBUG:root:Finish turn
 
+=======
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:11 12 5.0
+DEBUG:root:Order:19 17 47.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:2 5 38.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
+DEBUG:root:Finish turn
+
+DEBUG:root:Finish turn
+
+<<<<<<< HEAD
+DEBUG:root:Finish turn
+
+=======
+DEBUG:root:Order:15 11 16.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:9 22 42.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
+DEBUG:root:Finish turn
+
+DEBUG:root:Finish turn
+
+DEBUG:root:Finish turn
+
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:19 3 41.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -297,43 +506,59 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
-DEBUG:root:Finish turn
-
+<<<<<<< HEAD
 DEBUG:root:Order:17 0 93.0
 DEBUG:root:Finish turn
 
+=======
+DEBUG:root:Order:9 14 12.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:6 12 12.0
+DEBUG:root:Order:9 13 54.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:21 15 24.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:10 4 123.0
 DEBUG:root:Finish turn
 
 DEBUG:root:Order:11 0 14.0
 DEBUG:root:Finish turn
 
+=======
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:4 8 15.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:17 21 36.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:6 17 86.0
 DEBUG:root:Finish turn
 
 DEBUG:root:Order:5 9 125.0
+=======
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:17 7 10.0
+DEBUG:root:Order:3 15 20.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -342,22 +567,38 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:9 6 62.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
+DEBUG:root:Finish turn
+
+=======
+DEBUG:root:Order:12 11 5.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:9 14 12.0
+DEBUG:root:Order:3 21 16.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
-DEBUG:root:Finish turn
-
+<<<<<<< HEAD
 DEBUG:root:Order:12 17 120.0
 DEBUG:root:Order:3 18 167.0
+=======
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:16 1 121.0
 DEBUG:root:Finish turn
 
@@ -367,6 +608,16 @@ DEBUG:root:Finish turn
 DEBUG:root:Order:11 0 36.0
 DEBUG:root:Finish turn
 
+=======
+DEBUG:root:Finish turn
+
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:9 5 24.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:22 12 17.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -377,10 +628,16 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:3 2 112.0
 DEBUG:root:Finish turn
 
 DEBUG:root:Order:14 12 89.0
+=======
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:21 11 12.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -391,7 +648,11 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:8 9 89.0
+=======
+DEBUG:root:Order:21 7 9.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -404,18 +665,31 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:5 8 9.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:14 12 22.0
 DEBUG:root:Finish turn
 
+=======
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:12 0 10.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:11 3 44.0
+=======
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -426,10 +700,17 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:9 14 25.0
 DEBUG:root:Order:6 2 78.0
 DEBUG:root:Finish turn
 
+=======
+DEBUG:root:Order:0 11 4.0
+DEBUG:root:Finish turn
+
+DEBUG:root:Order:0 12 18.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -438,7 +719,10 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
 DEBUG:root:Order:9 14 32.0
+=======
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
@@ -449,6 +733,10 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
+<<<<<<< HEAD
+=======
+DEBUG:root:Order:12 11 5.0
+>>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f
 DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn

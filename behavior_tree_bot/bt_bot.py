@@ -32,10 +32,11 @@ def setup_behavior_tree():
 
     spread_sequence = Sequence(name='Spread Strategy')
     neutral_planet_check = Check(if_neutral_planet_available)
-    spread_action = Action(spread_to_weakest_neutral_planet)
+    #closest_neutral_planet = Check()
+    spread_action = Action(spread_to_closest_neutral_planet)
     spread_sequence.child_nodes = [neutral_planet_check, spread_action]
 
-    root.child_nodes = [offensive_plan, spread_sequence, attack.copy()]
+    root.child_nodes = [spread_sequence,offensive_plan, attack.copy()]
 
     logging.info('\n' + root.tree_to_string())
     return root

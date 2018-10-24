@@ -1,0 +1,36 @@
+INFO:root:
+Selector: High Level Ordering of Strategies
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread_to_closest_neutral_planet
+| Sequence: Offensive Strategy
+| | Check: have_largest_fleet
+| | Action: attack_weakest_enemy_planet
+| Action: attack_weakest_enemy_planet
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Spread Strategy
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: spread_to_closest_neutral_planet
+ERROR:root:Error in bot.
+Traceback (most recent call last):
+  File "behavior_tree_bot/bt_bot.py", line 58, in <module>
+    do_turn(planet_wars)
+  File "behavior_tree_bot/bt_bot.py", line 46, in do_turn
+    behavior_tree.execute(planet_wars)
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 8, in logged_fn
+    result = fn(self, state)
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 52, in execute
+    success = child_node.execute(state)
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 8, in logged_fn
+    result = fn(self, state)
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 63, in execute
+    continue_execution = child_node.execute(state)
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 8, in logged_fn
+    result = fn(self, state)
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 89, in execute
+    return self.action_function(state)
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\behaviors.py", line 52, in spread_to_closest_neutral_planet
+    logging.debug("please display")
+NameError: name 'logging' is not defined

@@ -1,8 +1,6 @@
 DEBUG:root:Order:2 9 85.0
 DEBUG:root:Finish turn
 
-<<<<<<< HEAD
-=======
 DEBUG:root:Order:2 11 13.0
 DEBUG:root:Finish turn
 
@@ -220,4 +218,3 @@ DEBUG:root:Finish turn
 
 DEBUG:root:Finish turn
 
->>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f

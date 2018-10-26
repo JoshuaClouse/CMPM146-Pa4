@@ -1,41 +1,5 @@
 INFO:root:
 Selector: High Level Ordering of Strategies
-<<<<<<< HEAD
-| Sequence: Spread Strategy
-| | Check: if_neutral_planet_available
-| | Action: spread_to_closest_neutral_planet
-| Sequence: Offensive Strategy
-| | Check: have_largest_fleet
-| | Action: attack_weakest_enemy_planet
-| Action: attack_weakest_enemy_planet
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_closest_neutral_planet
-ERROR:root:Error in bot.
-Traceback (most recent call last):
-  File "behavior_tree_bot/bt_bot.py", line 58, in <module>
-    do_turn(planet_wars)
-  File "behavior_tree_bot/bt_bot.py", line 46, in do_turn
-    behavior_tree.execute(planet_wars)
-  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 8, in logged_fn
-    result = fn(self, state)
-  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 52, in execute
-    success = child_node.execute(state)
-  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 8, in logged_fn
-    result = fn(self, state)
-  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 63, in execute
-    continue_execution = child_node.execute(state)
-  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 8, in logged_fn
-    result = fn(self, state)
-  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 89, in execute
-    return self.action_function(state)
-  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\behaviors.py", line 52, in spread_to_closest_neutral_planet
-    logging.debug("please display")
-NameError: name 'logging' is not defined
-=======
 | Sequence: Offensive Strategy
 | | Check: have_largest_fleet
 | | Action: attack_weakest_enemy_planet
@@ -1609,17 +1573,16 @@ Traceback (most recent call last):
     do_turn(planet_wars)
   File "behavior_tree_bot/bt_bot.py", line 45, in do_turn
     behavior_tree.execute(planet_wars)
-  File "/Users/Jason/Documents/Files/UCSC/CMPM 146/P4/behavior_tree_bot/bt_nodes.py", line 8, in logged_fn
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 8, in logged_fn
     result = fn(self, state)
-  File "/Users/Jason/Documents/Files/UCSC/CMPM 146/P4/behavior_tree_bot/bt_nodes.py", line 52, in execute
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 52, in execute
     success = child_node.execute(state)
-  File "/Users/Jason/Documents/Files/UCSC/CMPM 146/P4/behavior_tree_bot/bt_nodes.py", line 8, in logged_fn
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 8, in logged_fn
     result = fn(self, state)
-  File "/Users/Jason/Documents/Files/UCSC/CMPM 146/P4/behavior_tree_bot/bt_nodes.py", line 89, in execute
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\bt_nodes.py", line 89, in execute
     return self.action_function(state)
-  File "/Users/Jason/Documents/Files/UCSC/CMPM 146/P4/behavior_tree_bot/behaviors.py", line 15, in attack_weakest_enemy_planet
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\behaviors.py", line 15, in attack_weakest_enemy_planet
     weakest_planet = min([planet for planet in state.enemy_planets() if not any(fleet.destination_planet == planet.ID for fleet in state.my_fleets())], key=lambda p: p.num_ships + p.growth_rate * state.distance(strongest_planet.ID, p.ID), default=None)
-  File "/Users/Jason/Documents/Files/UCSC/CMPM 146/P4/behavior_tree_bot/behaviors.py", line 15, in <lambda>
+  File "C:\Users\Josh\Documents\school\cm146\pa4\behavior_tree_bot\behaviors.py", line 15, in <lambda>
     weakest_planet = min([planet for planet in state.enemy_planets() if not any(fleet.destination_planet == planet.ID for fleet in state.my_fleets())], key=lambda p: p.num_ships + p.growth_rate * state.distance(strongest_planet.ID, p.ID), default=None)
 AttributeError: 'NoneType' object has no attribute 'ID'
->>>>>>> c9269ed388f2bcf101346ebed2d873f38a14fd6f

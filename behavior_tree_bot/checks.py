@@ -15,3 +15,9 @@ def have_attacked_allies(state):
 		if any(planet.ID == fleet.destination_planet for planet in state.my_planets()):
 			return True
 	return False
+
+def early_game(state):
+  total_planets = len(state.my_planets()) + len(state.neutral_planets()) + len(state.enemy_planets())
+  if len(state.neutral_planets()) > total_planets/2:
+    return True
+  return False

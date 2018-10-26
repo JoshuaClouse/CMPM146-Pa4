@@ -31,9 +31,26 @@ def setup_behavior_tree():
     offensive_plan.child_nodes = [largest_fleet_check, attack]
 
     spread_sequence = Sequence(name='Spread Strategy')
+    #neutral planet check
     neutral_planet_check = Check(if_neutral_planet_available)
-    spread_action = Action(spread_to_weakest_neutral_planet)
-    spread_sequence.child_nodes = [neutral_planet_check, spread_action]
+    #late game and early game spreading actions
+    logging.info("log 1")
+    spread_late = Action(late_game_spread)
+    spread_early = Action(early_game_spread)
+    #early game checks and sequence
+    early_game_check = Check(early_game)
+    early_game_sequence = Sequence(name= 'Early strat')
+    logging.info("log 2")
+    #places early game check and action into early game sequence
+    early_game_sequence.child_nodes = [early_game_check, spread_early]
+    #this selector will choose between early game and late game strats
+    specific_selector = Selector(name= 'Specific Strat')
+    #puts early game seq and late game action into selector
+    logging.info("log 3")
+    specific_selector.child_nodes = [early_game_sequence, spread_late]
+    logging.info('log 3.5')
+    spread_sequence.child_nodes = [neutral_planet_check, specific_selector]
+    logging.info("log 4")
 
     defensive_plan = Sequence(name='Defensive Strategy')
     ally_being_attacked = Check(have_attacked_allies)

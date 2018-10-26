@@ -2,6 +2,13 @@ import sys
 sys.path.insert(0, '../')
 from planet_wars import issue_order
 import math
+import logging, traceback, os, inspect
+logging.basicConfig(filename=__file__[:-3] +'.log', filemode='w', level=logging.DEBUG)
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
+logging.basicConfig(filename=__file__[:-3] + '.log', filemode='w', level=logging.DEBUG)
+
 
 def attack_weakest_enemy_planet(state):
     closest_my_planet = None
@@ -54,7 +61,7 @@ def attack_weakest_enemy_planet(state):
         return issue_order(state, closest_my_planet.ID, closest_enemy_planet.ID, fleet_size)
 
 
-def spread_to_weakest_neutral_planet(state):
+def late_game_spread(state):
     closest_my_planet = None
     closest_neutral_planet = None
     closest_distance = math.inf
@@ -292,6 +299,83 @@ def defend_from_enemy_fleet(state):
     else:
         # (4) Send half the ships from my strongest planet to the weakest enemy planet.
         return issue_order(state, closest_my_planet.ID, closest_ally_planet.ID, fleet_size+1)
+
+def early_game_spread(state):
+    logging.info("print this out")
+    total_distance = 0
+    total_planets = 0
+    distances = []
+
+    my_fleet_on_the_way_neutral_planets = [planet for planet in state.neutral_planets() if any(fleet.destination_planet == planet.ID for fleet in state.my_fleets())]
+    no_my_fleet_on_the_way_neutral_planets = [planet for planet in state.neutral_planets() if not any(fleet.destination_planet == planet.ID for fleet in state.my_fleets())]
+
+    enemy_fleet_on_the_way_neutral_planets = [planet for planet in state.neutral_planets() if any(fleet.destination_planet == planet.ID for fleet in state.enemy_fleets())]
+    no_enemy_fleet_on_the_way_neutral_planets = [planet for planet in state.neutral_planets() if not any(fleet.destination_planet == planet.ID for fleet in state.enemy_fleets())]
+
+    # Planet with both fleets on the wayc
+    neutral_planets_with_both_fleets = list(set(my_fleet_on_the_way_neutral_planets) & set(enemy_fleet_on_the_way_neutral_planets))
+
+    # Planet with only my fleet
+    neutral_planets_with_only_my_fleets = list(set(my_fleet_on_the_way_neutral_planets) - set(neutral_planets_with_both_fleets))
+
+    # Planet with only enemy fleet
+    neutral_planets_with_only_enemy_fleets = list(set(enemy_fleet_on_the_way_neutral_planets) - set(neutral_planets_with_both_fleets))
+    
+    #loop adds up the sums of the distances to all the neutral planets and the allied planets
+    for neutral_planet in state.neutral_planets():
+        for my_planet in state.my_planets():
+            distances.append(state.distance(neutral_planet.ID, my_planet.ID))
+            total_distance += state.distance(neutral_planet.ID, my_planet.ID)
+            total_planets += 1
+    #calculates the average distance to neutral planets from allied planets
+    average_distance = total_distance / total_planets
+    #calculates the standard deviation of distances
+    standard_deviation = 0
+    for distance in distances:
+        distance = (distance - average_distance)**2
+    for distance in distances:
+        standard_deviation += distance
+    standard_deviation = standard_deviation / total_planets
+    #standard_deviation should now be the standard deviation
+    standard_deviation = math.sqrt(standard_deviation)
+    #look for planets in mid range i.e. within 1 standard devation of the mean distance
+    for neutral_planet in state.neutral_planets():
+        for my_planet in state.my_planets():
+            dist = state.distance(neutral_planet.ID, my_planet.ID)
+            if dist > average_distance - standard_deviation and dist < average_distance + standard_deviation and my_planet.num_ships > neutral_planet.num_ships and neutral_planet not in my_fleet_on_the_way_neutral_planets:
+                ships_needed = neutral_planet.num_ships
+
+                # in case there are enemy fleets heading toward target planet
+                if neutral_planet in neutral_planets_with_only_enemy_fleets: 
+                    enemy_fleet_list = [fleet for fleet in state.enemy_fleets() if fleet.destination_planet == neutral_planet.ID]
+                    enemy_fleet_list = sorted(enemy_fleet_list, key=lambda f: f.turns_remaining)
+                    planet_conquered = False
+                    conquered_turns = 0
+                    
+                    for fleet in enemy_fleet_list:
+                        if planet_conquered == False: # if the target planet has not yet been conquered 
+                            if fleet.num_ships <= ships_needed: # if the enemy fleet is not big enough to capture it
+                                ships_needed -= fleet.num_ships
+                            else: # if the enemy fleet is big enough to capture it
+                                ships_needed = fleet.num_ships - ships_needed
+                                planet_conquered = True
+                                
+                                if state.distance(my_planet.ID, neutral_planet.ID) > fleet.turns_remaining: # if my fleet can't get to the planet before its captured
+                                    conquered_turns = state.distance(my_planet.ID, neutral_planet.ID) - fleet.turns_remaining
+                                
+                        else: # if the target planet is captured
+                            ships_needed += fleet.num_ships
+                        
+                    ships_needed += conquered_turns * neutral_planet.growth_rate
+
+                    enemy_fleet_list = [fleet for fleet in state.enemy_fleets() if fleet.destination_planet == my_planet.ID]
+                    total_attack_force = 0
+                    if enemy_fleet_list:
+                        for fleet in enemy_fleet_list:
+                            total_attack_force += fleet.num_ships
+                    if my_planet.num_ships > ships_needed + total_attack_force and ships_needed > 0:
+                        return issue_order(state, my_planet.ID, neutral_planet.ID, ships_needed)
+    return False 
 
 
 
